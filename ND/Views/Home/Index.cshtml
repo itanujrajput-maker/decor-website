@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namastubhyam Decor | Premium Interior Designers in Meerut</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+   
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="#" class="logo">NAMASTUBHYAM <span>DECOR</span></a>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#enquiry">Location</a></li>
+        </ul>
+        <a href="#enquiry" class="btn-header">Book Free Expert Consultation</a>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>The destination for<br>complete home interiors</h1>
+            <p>Personalized designs, quality materials, and transparent pricing in Meerut.</p>
+            <a href="#enquiry" class="btn-header" style="padding: 18px 45px; font-size: 18px;">Get Free Quote</a>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="section-header">
+            <h2>Our Full Range of Offerings</h2>
+            <div class="bar"></div>
+        </div>
+        <div class="services-grid">
+            <div class="s-card"><i class="fas fa-couch"></i><h3>Modular Interiors</h3></div>
+            <div class="s-card"><i class="fas fa-window-restore"></i><h3>Glass Work</h3></div>
+            <div class="s-card"><i class="fas fa-scroll"></i><h3>Wallpaper</h3></div>
+            <div class="s-card"><i class="fas fa-border-all"></i><h3>PVC Panels & Ceiling</h3></div>
+            <div class="s-card"><i class="fas fa-stream"></i><h3>Louver & Fluted Panels</h3></div>
+            <div class="s-card"><i class="fas fa-square-full"></i><h3>Wooden Flooring</h3></div>
+            <div class="s-card"><i class="fas fa-images"></i><h3>Customized Wallpaper</h3></div>
+            <div class="s-card"><i class="fas fa-cubes"></i><h3>3D Wallpaper & Panels</h3></div>
+            <div class="s-card"><i class="fas fa-leaf"></i><h3>Vertical Garden</h3></div>
+            <div class="s-card"><i class="fas fa-seedling"></i><h3>Green Grass</h3></div>
+            <div class="s-card"><i class="fas fa-gem"></i><h3>UV Marble Sheet</h3></div>
+            <div class="s-card"><i class="fas fa-window-maximize"></i><h3>Window Blinds</h3></div>
+        </div>
+    </section>
+
+    <section id="gallery" style="background: #fff;">
+        <div class="section-header">
+            <h2>Design Inspiration</h2>
+            <div class="bar"></div>
+        </div>
+        <div class="tabs">
+            <button class="tab-btn active" onclick="filterGallery('all')">All Designs</button>
+            <button class="tab-btn" onclick="filterGallery('kitchen')">Modular Kitchen</button>
+            <button class="tab-btn" onclick="filterGallery('living')">Living Room</button>
+            <button class="tab-btn" onclick="filterGallery('bedroom')">Bedroom</button>
+        </div>
+        <div class="gallery-grid" id="galleryGrid">
+            <div class="g-item kitchen"><img src="https://images.unsplash.com/photo-1556911223-e1520413ad02?auto=format&fit=crop&w=800" alt="Kitchen"></div>
+            <div class="g-item living"><img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800" alt="Living"></div>
+            <div class="g-item bedroom"><img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800" alt="Bedroom"></div>
+            <div class="g-item kitchen"><img src="https://images.unsplash.com/photo-1600585154340-be6199f7a096?auto=format&fit=crop&w=800" alt="Kitchen"></div>
+            <div class="g-item living"><img src="https://images.unsplash.com/photo-1616489953149-755e74f2e93d?auto=format&fit=crop&w=800" alt="Living"></div>
+        </div>
+    </section>
+
+    <section id="enquiry" class="contact-container">
+        <div class="form-box">
+            <h2>Talk to our expert</h2>
+            <form id="enquiryForm" method="post">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Email ID" required>
+                <input type="tel" name="Mobile" placeholder="Mobile Number" required>
+                <select name="Service" required>
+                    <option value="">Select Service</option>
+                    <option value="Modular Kitchen">Modular Kitchen</option>
+                    <option value="PVC Panels">PVC Panels & Ceiling</option>
+                    <option value="Flooring">Wooden Flooring</option>
+                    <option value="Vertical Garden">Vertical Garden</option>
+                </select>
+                <textarea name="Message" placeholder="Tell us about your requirement..." rows="4"></textarea>
+                <button type="submit" class="btn-submit">Submit Enquiry</button>
+            </form>
+        </div>
+        <div class="map-box">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3491.564416184656!2d77.6749999!3d28.9400000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390c666666666667%3A0x6666666666666666!2sBaghpat%20Road%2C%20Meerut%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1712435000000!5m2!1sen!2sin"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <a href="#" class="logo" style="color: #fff;">NAMASTUBHYAM <span>DECOR</span></a>
+                <p style="color: #888; margin-top: 20px;">Turning your home into a masterpiece with premium interior solutions.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Details</h4>
+                <ul>
+                    <li><i class="fas fa-user"></i> Bunty Daksh (Owner)</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Shop No. 06, J.P Plaza, Baghpat Road, Meerut, India</li>
+                    <li><i class="fas fa-phone"></i> +91 7455083600</li>
+                    <li><i class="fas fa-envelope"></i> it.namstubhyamdecor05@gmail.com</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#services">Our Offerings</a></li>
+                    <li><a href="#gallery">Design Inspiration</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div style="text-align: center; color: #555; padding-top: 40px; border-top: 1px solid #333; font-size: 14px;">
+            &copy; 2026 Namastubhyam Decor. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        function filterGallery(category) {
+            const items = document.querySelectorAll('.g-item');
+            const btns = document.querySelectorAll('.tab-btn');
+
+            // Toggle active button
+            btns.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            // Filter logic
+            items.forEach(item => {
+                item.style.display = 'none';
+                if(category === 'all' || item.classList.contains(category)) {
+                    item.style.display = 'block';
+                }
+            });
+        }
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $('#enquiryForm').on('submit', function (e) {
+            e.preventDefault();
+
+            const submitBtn = $(this).find('.btn-submit');
+            submitBtn.text('Sending...').prop('disabled', true);
+
+            $.ajax({
+                url: '/Home/SendEnquiry', // Change 'Home' to your actual Controller name
+                type: 'POST',
+                data: $(this).serialize(),
+                success: function (response) {
+                    if (response.success) {
+                        alert(response.message);
+                        $('#enquiryForm')[0].reset();
+                    } else {
+                        alert("Error: " + response.message);
+                    }
+                },
+                error: function () {
+                    alert("Something went wrong. Please try again.");
+                },
+                complete: function() {
+                    submitBtn.text('Submit Enquiry').prop('disabled', false);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
