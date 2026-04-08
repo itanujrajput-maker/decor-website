@@ -16,5 +16,8 @@ namespace ND.Models
 
         public string Message { get; set; }
         public string ServiceType { get; set; }
+
+
+
     }
 }

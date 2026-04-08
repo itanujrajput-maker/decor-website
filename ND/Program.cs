@@ -1,5 +1,19 @@
 var builder = WebApplication.CreateBuilder(args);
 
+// ✅ 1️⃣ ADD CORS HERE (before Build)
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowFrontend",
+        policy => policy
+            .WithOrigins(
+                "https://your-angular-app.onrender.com",   // Angular on Render
+                "https://namastubhyamdecor.com",           // your domain
+                "https://www.namastubhyamdecor.com"        // your domain (www)
+            )
+            .AllowAnyHeader()
+            .AllowAnyMethod());
+});
+
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
@@ -14,17 +28,18 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-// ✅ ADD THIS (for static files like CSS, JS, images)
 app.UseStaticFiles();
 
 app.UseRouting();
 
+// ✅ 2️⃣ ADD CORS HERE (VERY IMPORTANT - after UseRouting)
+app.UseCors("AllowFrontend");
+
 app.UseAuthorization();
 
-// ✅ REMOVE .WithStaticAssets()
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
-// ✅ IMPORTANT for Render (port binding)
+// ✅ IMPORTANT for Render
 app.Run("http://0.0.0.0:10000");
